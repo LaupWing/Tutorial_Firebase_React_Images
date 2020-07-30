@@ -20,7 +20,8 @@ const UploadForm = ()=>{
             {console.log('rendering upploadform')}
             <input type="file" onChange={changeHandler}/>
             <div className="output">
-                {error && <div className={error}>{error}</div>}
+                {error && <div className='error'>{error}</div>}
+                {file && <div>{file.name}</div>}
             </div>
         </form>
     );
